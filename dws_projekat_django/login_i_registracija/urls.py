@@ -1,0 +1,36 @@
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('povuciAgencije/', views.povuci_agencije, name='povuci_agencije'),
+    path('login/', views.login, name='login'),
+    path('resetujLozinku/', views.resetuj_lozinku, name='resetuj_lozinku'),
+    path('registracija/korisnik', views.registracija_korisnik, name='registracija_korisnik'),
+    path('registracija/agencija', views.registracija_agencija, name='registracija_agencija'),
+    path('podnesiZahtjevZaPutovanje/', views.podnesi_zahtjev_za_putovanje, name='podnesi_zahtjev_za_putovanje'),
+    path('dodajPutovanje/', views.dodaj_putovanje, name='dodaj_putovanje'),
+    path('dajSvaPutovanja/', views.daj_sva_putovanja, name='daj_sva_putovanja'),
+    path('dajPutovanje/', views.daj_putovanje, name='daj_putovanje'),
+    path('dodajPutovanjeZaKorisnika/', views.dodaj_putovanje_za_korisnika, name='dodaj_putovanje_za_korisnika'),
+    path('ponistiPutovanjeZaKorisnika/', views.ponisti_putovanje_za_korisnika, name='ponisti_putovanje_za_korisnika'),
+    path('dajSvaPutovanjaZaKorisnikaIzProslosti/', views.daj_sva_putovanja_za_korisnika_iz_proslosti, name='daj_sva_putovanja_za_korisnika_iz_proslosti'),
+    path('dajSvaPutovanjaZaKorisnikaUBuducnosti/', views.daj_sva_putovanja_za_korisnika_u_buducnosti, name='daj_sva_putovanja_za_korisnika_u_buducnosti'),
+    path('dajSveZahtjevaZaPutovanjaKorisnika/', views.daj_sve_zahtjeve_za_putovanja_korisnika, name='daj_sve_zahtjeve_za_putovanja_korisnika'),
+    path('dajSvaPutovanjaZaAgencijuIzProslosti/', views.daj_sva_putovanja_za_agenciju_iz_proslosti, name='daj_sva_putovanja_za_agenciju_iz_proslosti'),
+    path('dajSvaPutovanjaZaAgencijuUBuducnosti/', views.daj_sva_putovanja_za_agenciju_u_buducnosti, name='daj_sva_putovanja_za_agenciju_u_buducnosti'),
+    path('dodajPutovanjeZaKorisnika/', views.dodaj_putovanje_za_korisnika, name='dodaj_putovanje_za_korisnika'),
+    path('dajPutovanjeAgenciji/', views.daj_putovanje_agenciji, name='daj_putovanje_agenciji'),
+    path('dajSveZahtjevaZaPutovanjaAgencije/', views.daj_sve_zahtjeve_za_putovanja_agencije, name='daj_sve_zahtjeve_za_putovanja_agencije'),
+    path('promijeniStatusPutovanju/', views.promijeni_status_putovanju, name='promijeni_status_putovanju'),
+    path('ukloniPutovanje/', views.ukloni_putovanje, name='ukloni_putovanje'),
+    path('dajInfoZaKorisnika/', views.daj_info_za_korisnika, name='daj_info_za_korisnika'),
+    path('dajInfoZaAgenciju/', views.daj_info_za_agenciju, name='daj_info_za_agenciju'),
+    path('izmjeniInfoProfilaKorisnika/', views.izmjeni_info_profila_korisnika, name='izmjeni_info_profila_korisnika'),
+    path('izmjeniInfoProfilaAgencije/', views.izmjeni_info_profila_agencije, name='izmjeni_info_profila_agencije'),
+    path('generisiPdfZaPutovanje/', views.generisi_pdf_za_putovanje, name='generisi_pdf_za_putovanje'),
+    path('dajPutovanjaUPosljednjihMjesecDanaZaKorisnika/', views.daj_putovanja_u_posljednjih_mjesec_dana_za_korisnika, name='daj_putovanja_u_posljednjih_mjesec_dana_za_korisnika'),
+    path('dajPutovanjaUPosljednjihMjesecDanaZaAgenciju/', views.daj_putovanja_u_posljednjih_mjesec_dana_za_agenciju, name='daj_putovanja_u_posljednjih_mjesec_dana_za_agenciju'),
+    path('podnesiZahtjevZaPutovanjeSaMape/', views.podnesi_zahtjev_za_putovanje_sa_mape, name='podnesi_zahtjev_za_putovanje_sa_mape'),
+    path('dodajPutovanjeSaMape/', views.dodaj_putovanje_sa_mape, name='dodaj_putovanje_sa_mape'),
+]
